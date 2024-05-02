@@ -21,7 +21,7 @@ while True:
         
       
         landmarks = predictor(gray, rect)
-        
+        #Detectamos landmarks
         for i in range(0, 68):
             x_land = landmarks.part(i).x
             y_land = landmarks.part(i).y
